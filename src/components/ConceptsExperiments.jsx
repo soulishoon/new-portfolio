@@ -19,31 +19,31 @@ import "swiper/css/pagination";
 const concepts = [
   {
     title: "SweetCraft",
-    description: "Playful micro-interactions and motion crafted for a dessert ordering app.",
+    description: "Designed a visually immersive website for cake recipes, combining delightful UI elements with smooth navigation",
     image: SweetCraft,
     urllink: "/ConceptDetail",
   },
   {
     title: "Driveo",
-    description: "Minimal automotive dashboard UI exploring clean layouts and contrast.",
+    description: "A modern car rental app with real-time availability and a fast booking process",
     image: Driveo,
     urllink: "/DriveoDetail",
   },
   {
     title: "Dide",
-    description: "Elegant mobile app concept focused on emotional design and smooth experience.",
+    description: "Developed a cinematic movie platform with intuitive navigation",
     image: Dide,
     urllink: "/DideDetail",
   },
   {
     title: "Ritmo",
-    description: "Dynamic rhythm-based interface experiment exploring typography and motion.",
+    description: "A vibrant music streaming app with personalized playlists and fluid navigation",
     image: Ritmo,
     urllink: "/RitmoDetail",
   },
   {
     title: "Dora",
-    description: "Adaptive layout system inspired by editorial design and flexible grids.",
+    description: "A luxury fashion website designed with a minimalist and elegant style",
     image: Dora,
     urllink: "/DoraDetail",
   },
@@ -60,7 +60,7 @@ export default function ConceptsExperiments() {
     >
       <div className="max-w-6xl mx-auto text-center relative">
         {/* Header */}
-        <h2 className="text-2xl font-semibold mb-2">Concepts & Experiments</h2>
+        <h2 className="text-2xl font-semibold mb-2">Concepts</h2>
         <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
           Personal explorations and design experiments focused on motion, form,
           and clarity.
