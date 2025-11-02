@@ -38,7 +38,7 @@
           viewport={{ once: true }}
         >
           <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            Selected Projects
+            PROJECTS
           </h2>
           <p className="text-gray-500 mb-12 max-w-2xl mx-auto">
             A selection of my latest product and interface design works.
