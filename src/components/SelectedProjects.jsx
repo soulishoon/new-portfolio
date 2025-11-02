@@ -4,7 +4,7 @@
   import dornacasestudy from "../assets/DornaCaseStudy.png"
   import kheradkhancasestudy from "../assets/KheradKhanCaseStudy.png"
   import dorna from "../assets/Dorna.png";
-  import kherad from "../assets/Kheradkhan.png";
+  import kherad from "../assets/KheradKhan.png";
 
   export default function SelectedProjects() {
     const [selectedProject, setSelectedProject] = useState(null);
