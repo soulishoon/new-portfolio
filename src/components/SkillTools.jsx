@@ -99,7 +99,7 @@ export default function SkillsTools() {
         </div>
 
         {/* Tools I Use */}
-        <div>
+        <div className="relative bottom-[30px] ">
           <h3 className="text-xl font-semibold text-orange-300 mb-10 tracking-wide uppercase">
             Tools
           </h3>
