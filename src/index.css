@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.swiper-pagination-bullet {
+  background-color: #7f85f4 !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:  rgb(95, 118, 249) !important;
+  opacity: 1;
+}
+
+
+
+@keyframes slideUpSlow {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDownSlow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+[data-state="open"].animate-slideUpSlow {
+  animation: slideUpSlow 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+[data-state="closed"].animate-slideDownSlow {
+  animation: slideDownSlow 2s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
