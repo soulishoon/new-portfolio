@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState } from "react";
 import {
@@ -27,12 +26,9 @@ export default function DideDetail() {
 
   const details = [
     "Designed a cinematic movie platform with intuitive navigation, detailed movie pages, and personalized watchlists.",
-     "Emphasized visual storytelling and a user-centric experience for film discovery and engagement."
+    "Emphasized visual storytelling and a user-centric experience for film discovery and engagement.",
   ];
 
-  
-
-  // 🎯 پارالاکس موکاپ با حرکت موس
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [10, -10]);
@@ -53,20 +49,20 @@ export default function DideDetail() {
 
   return (
     <motion.section
-      className="max-h-screen min-h-screen bg-linear-to-b from-[#050b1f] via-[#0a1638] to-[#101b4a]
-       text-white flex flex-col items-center px-8 py-16 md:py-24 font-[Poppins]"
+      className="min-h-screen bg-gradient-to-b from-[#050b1f] via-[#0a1638] to-[#101b4a]
+       text-white flex flex-col items-center px-6 md:px-8 py-16 md:py-24 font-[Poppins] overflow-y-auto"
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       {/* 🔙 Back button */}
-      <div className="w-full max-w-6xl flex justify-start mb-12">
+      <div className="w-full max-w-6xl flex justify-start mb-10 md:mb-12">
         <button
           onClick={() => window.history.back()}
-          className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 bg-white/5 text-gray-200 hover:bg-white/10 hover:text-white transition-all duration-200 backdrop-blur-md"
+          className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-200 hover:bg-white/10 hover:text-white transition-all duration-200 backdrop-blur-md text-sm md:text-base"
         >
           <ArrowLeft size={18} />
-          <span className="text-sm font-medium">Back</span>
+          <span>Back</span>
         </button>
       </div>
 
@@ -79,24 +75,24 @@ export default function DideDetail() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="space-y-8 flex flex-col justify-center h-full"
         >
-          <h1 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-[#e36414] to-[#ffb077] bg-clip-text text-transparent leading-tight tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#e36414] to-[#ffb077] bg-clip-text text-transparent leading-tight tracking-tight text-center md:text-left">
             Dide
           </h1>
 
-          <div className="space-y-6">
+          <div className="space-y-6 text-center md:text-left">
             {details.map((line, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.25, delay: index * 0.1 }}
-                className="flex items-start gap-4"
+                className="flex items-start gap-4 justify-center md:justify-start"
               >
                 <div className="relative mt-2">
-                  <div className="w-4 h-4 rounded-full bg-[#e36414]/30 shadow-[0_0_10px_rgba(227,100,20,0.4)]" />
+                  <div className="w-3.5 h-3.5 rounded-full bg-[#e36414]/30 shadow-[0_0_10px_rgba(227,100,20,0.4)]" />
                   <div className="absolute inset-0 blur-md bg-[#e36414]/20 rounded-full" />
                 </div>
-                <p className="text-gray-300 leading-relaxed text-base md:text-lg">
+                <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg max-w-md">
                   {line}
                 </p>
               </motion.div>
@@ -104,7 +100,7 @@ export default function DideDetail() {
           </div>
 
           {/* 🔹 Thumbnails */}
-          <div className="flex flex-wrap gap-4 pt-8">
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-8">
             {conceptImages.map((img) => (
               <motion.div
                 key={img.id}
@@ -120,7 +116,7 @@ export default function DideDetail() {
                 <img
                   src={img.src}
                   alt={img.title}
-                  className="w-28 h-20 object-cover"
+                  className="w-24 sm:w-28 h-16 sm:h-20 object-cover"
                 />
               </motion.div>
             ))}
@@ -137,12 +133,12 @@ export default function DideDetail() {
         >
           {/* Glow aura */}
           <motion.div
-            className="absolute -inset-10 rounded-full bg-linear-to-tr from-[#e36414]/25 via-blue-400/15 to-transparent blur-3xl opacity-40"
+            className="absolute -inset-10 rounded-full bg-gradient-to-tr from-[#e36414]/25 via-blue-400/15 to-transparent blur-3xl opacity-40"
             animate={{ opacity: [0.3, 0.6, 0.3] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           />
 
-          {/* Moving shadow */}
+          {/* Shadow */}
           <motion.div
             style={{ x, y, scale: 1.1 }}
             className="absolute w-[80%] h-[85%] bottom-[-10%] rounded-3xl bg-black/30 blur-3xl opacity-40"
@@ -154,7 +150,7 @@ export default function DideDetail() {
               key={selected.src}
               src={selected.src}
               alt={selected.title}
-              className="relative z-10 w-full max-w-md rounded-3xl border border-blue-400/20 bg-[#0b1633]/80 shadow-[0_0_35px_rgba(59,130,246,0.25)] backdrop-blur-xl object-contain"
+              className="relative z-10 w-full max-w-sm sm:max-w-md md:max-w-lg rounded-3xl border border-blue-400/20 bg-[#0b1633]/80 shadow-[0_0_35px_rgba(59,130,246,0.25)] backdrop-blur-xl object-contain"
               initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
