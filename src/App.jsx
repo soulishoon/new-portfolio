@@ -17,6 +17,7 @@ import RitmoDetail from "./pages/RitmoDetail";
 
 export default function App() {
   return (
+    <div classname="max-w-screen">
     <Routes>
       {/* 🌍 Main Page */}
       <Route
@@ -74,5 +75,6 @@ export default function App() {
 
 
     </Routes>
+      </div>
   );
 }
