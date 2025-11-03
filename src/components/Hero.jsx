@@ -6,7 +6,7 @@ import OrangeShape from "../assets/orange-shape.svg";
 export default function Hero() {
   return (
     <section id="home" className="bg-[#0A1433] text-white">
-      <div className="max-w-screen-xl mx-auto px-6 md:px-24 flex flex-col md:flex-row items-center justify-between min-h-[85vh] py-12 translate-x-[10px]">
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 flex flex-col md:flex-row items-center justify-between min-h-[85vh] py-16 md:py-20 gap-12">
         
         {/* LEFT TEXT */}
         <motion.div
@@ -15,15 +15,16 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="flex flex-col gap-6 text-center md:text-left w-full md:w-1/2"
         >
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-snug tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug tracking-tight">
             Hi, I'm <span className="text-[#E36414]">Donya Mehrzad</span>
           </h1>
 
-          <p className="text-gray-300 font-medium text-base md:text-lg leading-relaxed tracking-wide">
-            Product Designer who turns tangled workflows into calm, intuitive experiences — shaping complexity into clarity.
+          <p className="text-gray-300 font-medium text-base sm:text-lg leading-relaxed tracking-wide max-w-md mx-auto md:mx-0">
+            Product Designer who turns tangled workflows into calm, intuitive
+            experiences — shaping complexity into clarity.
           </p>
 
-          <div className="flex justify-center md:justify-start mt-8">
+          <div className="flex justify-center md:justify-start mt-6 sm:mt-8">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -43,9 +44,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="relative flex justify-center items-center w-[260px] md:w-[340px] h-[260px] md:h-[340px] mt-12 md:mt-0 translate-x-[15px]"
+          className="relative flex justify-center items-center w-[220px] sm:w-[260px] md:w-[320px] lg:w-[340px] h-[220px] sm:h-[260px] md:h-[320px] lg:h-[340px]"
         >
-          <div className="relative w-[260px] md:w-[340px] h-[260px] md:h-[340px]">
+          <div className="relative w-full h-full">
             <img
               src={OrangeShape}
               alt="Decorative orange shape"
@@ -62,8 +63,3 @@ export default function Hero() {
     </section>
   );
 }
- 
-
-
-
-ریسپانسیو این رو درست کن چیزیش بهم نخوره ها
