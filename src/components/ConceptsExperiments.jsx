@@ -19,7 +19,7 @@ import "swiper/css/pagination";
 const concepts = [
   {
     title: "SweetCraft",
-    description: "Designed a visually immersive website for cake recipes, combining delightful UI elements with",
+    description: "Designed a visually immersive website for cake recipes, combining delightful UI elements",
     image: SweetCraft,
     urllink: "/ConceptDetail",
   },
