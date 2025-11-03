@@ -89,69 +89,72 @@ export default function SelectedProjects() {
 
       {/* Bottom Drawer */}
       <Dialog.Root
-        open={!!selectedProject}
-        onOpenChange={() => setSelectedProject(null)}
+  open={!!selectedProject}
+  onOpenChange={() => setSelectedProject(null)}
+>
+  <Dialog.Portal>
+    {/* Overlay */}
+    <Dialog.Overlay className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-700 z-40" />
+
+    {/* Drawer Content */}
+    <Dialog.Content asChild>
+      <motion.div
+        initial={{ y: "100%" }}
+        animate={{ y: 0 }}
+        exit={{ y: "100%" }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        drag="y"
+        dragConstraints={{ top: 0, bottom: 0 }}
+        onDragEnd={(_, info) => {
+          if (info.offset.y > 120) setSelectedProject(null);
+        }}
+        className="fixed z-50 bottom-0 left-0 right-0
+                   bg-white text-gray-900 rounded-t-3xl shadow-2xl
+                   flex flex-col max-h-[95vh] overflow-hidden
+                   md:max-h-[89vh]"
       >
-        <Dialog.Portal>
-          {/* Overlay */}
-          <Dialog.Overlay className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-700 z-40" />
+        {/* Drag Handle */}
+        <div className="w-14 h-1.5 bg-gray-300 rounded-full mx-auto my-4" />
 
-          {/* Drawer Content */}
-          <Dialog.Content asChild>
-            <motion.div
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "100%" }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              drag="y"
-              dragConstraints={{ top: 0, bottom: 0 }}
-              onDragEnd={(_, info) => {
-                if (info.offset.y > 120) setSelectedProject(null);
-              }}
-              className="fixed z-50 bottom-0 left-0 right-0 h-[88vh] sm:h-[90vh] bg-white text-gray-900
-                      rounded-t-3xl shadow-2xl overflow-y-auto cursor-grab active:cursor-grabbing"
-            >
-              {/* Drag Handle */}
-              <div className="w-14 h-1.5 bg-gray-300 rounded-full mx-auto my-4" />
+        {/* Fixed Header */}
+        <div className="flex-shrink-0 sticky top-0 w-full bg-white z-10 border-b border-gray-200">
+          <div className="flex justify-between items-center py-4 px-5 sm:px-8">
+            <div>
+              <Dialog.Title className="text-lg sm:text-xl font-semibold">
+                {selectedProject?.title}
+              </Dialog.Title>
+              <Dialog.Description className="text-gray-500 text-sm">
+                {selectedProject?.tag}
+              </Dialog.Description>
+            </div>
 
-              {/* Fixed Header */}
-              <div className="sticky top-0 w-full bg-white z-10 border-b border-gray-200">
-                <div className="flex justify-between items-center py-4 px-5 sm:px-8">
-                  <div>
-                    <Dialog.Title className="text-lg sm:text-xl font-semibold">
-                      {selectedProject?.title}
-                    </Dialog.Title>
-                    <Dialog.Description className="text-gray-500 text-sm">
-                      {selectedProject?.tag}
-                    </Dialog.Description>
-                  </div>
+            <Dialog.Close asChild>
+              <button className="text-gray-500 hover:text-gray-800 transition text-xl">
+                ✕
+              </button>
+            </Dialog.Close>
+          </div>
+        </div>
 
-                  <Dialog.Close asChild>
-                    <button className="text-gray-500 hover:text-gray-800 transition text-xl">
-                      ✕
-                    </button>
-                  </Dialog.Close>
-                </div>
-              </div>
+        {/* Scrollable Content */}
+        <div className="flex-1 overflow-y-auto scroll-smooth px-5 sm:px-8 pb-24">
+          <img
+            src={selectedProject?.casestudy}
+            alt={selectedProject?.title}
+            className="rounded-lg w-full h-auto mb-6 shadow-md object-contain"
+          />
 
-              {/* Drawer Content */}
-              <div className="px-5 sm:px-8 pb-20">
-                <img
-                  src={selectedProject?.casestudy}
-                  alt={selectedProject?.title}
-                  className="rounded-lg w-full h-auto mb-6 shadow-md object-contain"
-                />
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+            {selectedProject?.description}
+          </p>
 
-                <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                  {selectedProject?.description}
-                </p>
+          <div className="h-24" />
+        </div>
+      </motion.div>
+    </Dialog.Content>
+  </Dialog.Portal>
+</Dialog.Root>
 
-                <div className="h-16" />
-              </div>
-            </motion.div>
-          </Dialog.Content>
-        </Dialog.Portal>
-      </Dialog.Root>
     </section>
   );
 }
