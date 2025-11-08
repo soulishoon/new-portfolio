@@ -23,7 +23,7 @@ export default function ExperienceSection() {
 
           <div className="flex flex-col gap-10 border-l md:border-l border-gray-300 pl-6 md:pl-6">
             <div>
-              <h3 className="font-semibold text-lg">UI & UX Designer</h3>
+              <h3 className="font-semibold text-lg">Product Designer</h3>
               <p className="text-gray-600 text-sm mb-2">
                 Mohaymen <span className="text-gray-400">•</span> June 2025 - Present
               </p>
