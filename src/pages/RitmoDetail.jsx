@@ -90,36 +90,35 @@ export default function RitmoDetail() {
         </motion.div>
 
         {/* 📱 Mockup Section */}
-        <motion.div
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-          style={{ rotateX, rotateY }}
-          transition={{ type: 'spring', stiffness: 120, damping: 15 }}
-          className=" relative flex justify-center md:justify-end items-center gap-6 md:gap-10"
-        >
-          {/* Ambient Light Layer */}
-          <div className="absolute  inset-0 rounded-full blur-3xl bg-gradient-to-r from-[#e36414]/20 via-[#ffb077]/15 to-transparent pointer-events-none" />
+       <motion.div
+  onMouseMove={handleMouseMove}
+  onMouseLeave={handleMouseLeave}
+  style={{ rotateX, rotateY }}
+  transition={{ type: 'spring', stiffness: 120, damping: 15 }}
+  className="relative flex justify-center md:justify-end items-center gap-4 md:gap-8"
+>
+  {/* Ambient Light Layer */}
+  <div className="absolute inset-0 rounded-full blur-2xl bg-gradient-to-r from-[#e36414]/10 via-[#ffb077]/10 to-transparent pointer-events-none" />
 
-          {/* Left Phone */}
-          <div className="  transition-transform duration-300 hover:scale-105  rotate-16       rounded-[32px]  translate-y-8 shadow-[0_25px_50px_rgba(0,0,0,0.5),_0_0_30px_rgba(227,100,20,0.3)]">
+  {/* Left Phone */}
+  <div className="transition-transform duration-300 hover:scale-105 rotate-16 rounded-[28px] translate-y-6 shadow-[0_10px_25px_rgba(0,0,0,0.45),_0_0_15px_rgba(227,100,20,0.25)]">
+    <motion.img
+      src={mockupretro1}
+      alt="Ritmo app screen 1"
+      className="w-[130px] md:w-[180px] rotate-12"
+    />
+  </div>
 
-          <motion.img
-            src={mockupretro1}
-            alt="Ritmo app screen 1"
-            className="w-[130px] md:w-[180px]  rotate-12 "
-          />
-          </div>
+  {/* Center Phone */}
+  <div className="z-10 scale-110 hover:scale-[1.12] transition-transform duration-300 rotate-16 shadow-[0_15px_35px_rgba(0,0,0,0.5),_0_0_20px_rgba(255,140,70,0.3)] rounded-[30px]">
+    <motion.img
+      src={mockupretro2}
+      alt="Ritmo app screen 2"
+      className="w-[150px] md:w-[220px] rotate-12"
+    />
+  </div>
+</motion.div>
 
-          {/* Center Phone */}
-         <div className=" z-10 scale-110 hover:scale-[1.15] transition-transform duration-300 rotate-16         shadow-[0_35px_65px_rgba(0,0,0,0.55),_0_0_40px_rgba(255,140,70,0.4)] rounded-[36px]">
-         <motion.img
-            src={mockupretro2}
-            alt="Ritmo app screen 2"
-            className="w-[150px] md:w-[220px] rotate-12
-           "
-          />
-         </div>
-        </motion.div>
       </div>
     </motion.section>
   );
