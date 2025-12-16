@@ -118,7 +118,7 @@ import Footer from "./components/Footer";
 import RitmoDetail from "./pages/RitmoDetail";
 import Projects from "./components/Projects";
 import CloudDataBase from "./pages/CloudDataBase";
-import KheradKhan from "./pages/kheradkhan";
+import KheradKhan from "./pages/KheradKhan";
 import Dorna from "./pages/Dorna";
 
 export default function App() {
@@ -166,7 +166,6 @@ export default function App() {
             </>
           }
         />
-
         <Route path="/ConceptDetail" element={<ConceptDetail />} />
         <Route path="/DriveoDetail" element={<DriveoDetail />} />
         <Route path="/DideDetail" element={<DideDetail />} />
@@ -179,4 +178,5 @@ export default function App() {
     </div>
   );
 }
+
 
