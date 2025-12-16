@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  const navLinks = ["home", "experience", "projects", "concepts", "skill", "about Me"];
+  const navLinks = ["home", "experience", "case studies" , "projects", "concepts", "skill", "about Me"];
 
   useEffect(() => {
     const handleScroll = () => {

@@ -12,6 +12,10 @@ import DoraDetail from "./pages/DoraDetail";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import RitmoDetail from "./pages/RitmoDetail";
+import Projects from "./components/Projects";
+import CloudDataBase from "./pages/CloudDataBase";
+import KheradKhan from "./pages/kheradkhan";
+import Dorna from "./pages/Dorna";
 
 
 
@@ -36,8 +40,12 @@ export default function App() {
             </section>
 
 
-            <section id="projects">
+            <section id="case studies">
               <SelectedProjects />
+            </section>
+
+            <section id="projects">
+              <Projects/>
             </section>
 
 
@@ -70,6 +78,11 @@ export default function App() {
       <Route path="/DideDetail" element={<DideDetail />} />
       <Route path="/RitmoDetail" element={<RitmoDetail />} />
       <Route path="/DoraDetail" element={<DoraDetail />} />
+
+
+      <Route path="/CloudDataBase" element={<CloudDataBase />} />
+      <Route path="/Dorna" element={<Dorna />} />
+      <Route path="/KheradKhan" element={<KheradKhan />} />
 
 
 

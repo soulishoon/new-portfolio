@@ -7,21 +7,21 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import mockup1 from "../assets/mockups/mockup1.png";
-import mockup2 from "../assets/mockups/mockup2.png";
-import mockup3 from "../assets/mockups/mockup3.png";
-import mockup4 from "../assets/mockups/mockup4.png";
+import book1 from "../assets/project image/ketab1.png";
+import book2 from "../assets/project image/ketab2.png";
+import book3 from "../assets/project image/ketab3.png";
+import book4 from "../assets/project image/ketab4.png";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 
 const conceptImages = [
-  { id: 1, src: mockup1, title: "Fluid Navigation" },
-  { id: 2, src: mockup2, title: "Modern UI System" },
-  { id: 3, src: mockup3, title: "Futuristic Dashboard" },
-  { id: 4, src: mockup4, title: "AI Workflow Assistant" },
+  { id: 1, src: book1, title: "Fluid Navigation" },
+  { id: 2, src: book2, title: "Modern UI System" },
+  { id: 3, src: book3, title: "Futuristic Dashboard" },
+  { id: 4, src: book4, title: "AI Workflow Assistant" },
 ];
 
-export default function SweetcraftDetail() {
+export default function KheradKhan() {
   const [selected, setSelected] = useState(conceptImages[0]);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -33,9 +33,8 @@ export default function SweetcraftDetail() {
   }, []);
 
   const details = [
-    "Designed an intuitive baking platform that delivers high-quality recipe videos and step-by-step instructions.",
-    "Empowered users to personalize their learning journey by saving, organizing, and sharing recipes.",
-    "Prioritized simplicity and accessibility to ensure an inclusive, engaging experience for users of all skill levels.",
+    "A digital reading platform where users can save, organize, and revisit key takeaways from books and articles.",
+    " Designed for simplicity and efficiency, it supports deep learning and long-term knowledge retention."
   ];
 
   // 🎯 Parallax setup (disabled for mobile)
@@ -91,7 +90,7 @@ export default function SweetcraftDetail() {
           className="space-y-6 sm:space-y-8 flex flex-col justify-center h-full text-center md:text-left"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-linear-to-r from-[#e36414] to-[#ffb077] bg-clip-text text-transparent leading-tight">
-            Sweetcraft
+            Kherad Khan
           </h1>
 
           <div className="space-y-4 sm:space-y-6">

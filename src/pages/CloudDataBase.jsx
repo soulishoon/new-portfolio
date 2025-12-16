@@ -7,21 +7,21 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import mockup1 from "../assets/mockups/mockup1.png";
-import mockup2 from "../assets/mockups/mockup2.png";
-import mockup3 from "../assets/mockups/mockup3.png";
-import mockup4 from "../assets/mockups/mockup4.png";
+import databse1 from "../assets/project image/database1.png";
+import databse2 from "../assets/project image/database2.png";
+import databse3 from "../assets/project image/database3.png";
+import databse4 from "../assets/project image/database4.png";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 
 const conceptImages = [
-  { id: 1, src: mockup1, title: "Fluid Navigation" },
-  { id: 2, src: mockup2, title: "Modern UI System" },
-  { id: 3, src: mockup3, title: "Futuristic Dashboard" },
-  { id: 4, src: mockup4, title: "AI Workflow Assistant" },
+  { id: 1, src: databse1, title: "Fluid Navigation" },
+  { id: 2, src: databse2, title: "Modern UI System" },
+  { id: 3, src: databse3, title: "Futuristic Dashboard" },
+  { id: 4, src: databse4, title: "AI Workflow Assistant" },
 ];
 
-export default function SweetcraftDetail() {
+export default function CloudDataBase() {
   const [selected, setSelected] = useState(conceptImages[0]);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -60,10 +60,10 @@ export default function SweetcraftDetail() {
   };
 
   return (
-    <motion.section
+    <motion.section 
       className="min-h-screen bg-linear-to-b from-[#050b1f] via-[#0a1638] to-[#101b4a] 
                  text-white flex flex-col items-center px-4 sm:px-6 md:px-10 py-14 md:py-24 
-                 font-[Poppins] overflow-hidden"
+                 font-[Poppins] overflow-hidden max-h-screen"
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -82,7 +82,7 @@ export default function SweetcraftDetail() {
       </div>
 
       {/* 🌟 Content grid */}
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div className="max-w-6xl w-full  grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
         {/* Left: Text content */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -90,8 +90,8 @@ export default function SweetcraftDetail() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="space-y-6 sm:space-y-8 flex flex-col justify-center h-full text-center md:text-left"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-linear-to-r from-[#e36414] to-[#ffb077] bg-clip-text text-transparent leading-tight">
-            Sweetcraft
+          <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold bg-linear-to-r from-[#e36414] to-[#ffb077] bg-clip-text text-transparent leading-tight">
+            CloudBase DataBase
           </h1>
 
           <div className="space-y-4 sm:space-y-6">

@@ -51,7 +51,7 @@ export default function SkillsTools() {
       <div className="max-w-6xl mx-auto text-center space-y-24">
         {/* Header */}
         <div>
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#60a5fa] to-[#e36414] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-[#60a5fa] to-[#e36414] bg-clip-text text-transparent">
             Skills & Tools
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">

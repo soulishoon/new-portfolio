@@ -100,13 +100,13 @@ export default function ConceptsExperiments() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-b from-[#111C45]/90 to-[#0A1433]/90 rounded-2xl overflow-hidden 
+              className="bg-linear-to-b from-[#111C45]/90 to-[#0A1433]/90 rounded-2xl overflow-hidden 
                          shadow-lg hover:shadow-2xl transition-all duration-500 transform 
                          hover:-translate-y-1 cursor-pointer backdrop-blur-md border border-white/10"
             >
               <Link to={item.urllink}>
                 {/* Image Wrapper */}
-                <div className="bg-white relative w-full bg-[#0C1845] flex items-center justify-center aspect-[16/10] overflow-hidden">
+                <div className="bg-white relative w-full  flex items-center justify-center aspect-16/10 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
