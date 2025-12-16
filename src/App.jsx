@@ -23,7 +23,7 @@ import Dorna from "./pages/Dorna";
 export default function App() {
   return (
 
-    <div classname="max-w-screen">
+    <div className="max-w-screen">
 
     <Routes>
       {/* 🌍 Main Page */}
@@ -51,12 +51,7 @@ export default function App() {
 
             <section id="projects">
               <Projects/>
-
-            <section id="projects">
-              <SelectedProjects />
-
-            </section>
-
+              </section>
 
             <section id="concepts">
               <ConceptsExperiments />
@@ -99,7 +94,7 @@ export default function App() {
     </Routes>
 
 
-    </Routes>
+    
       </div>
 
   );
