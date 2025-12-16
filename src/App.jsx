@@ -12,22 +12,19 @@ import DoraDetail from "./pages/DoraDetail";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import RitmoDetail from "./pages/RitmoDetail";
-<<<<<<< HEAD
 import Projects from "./components/Projects";
 import CloudDataBase from "./pages/CloudDataBase";
 import KheradKhan from "./pages/kheradkhan";
 import Dorna from "./pages/Dorna";
-=======
->>>>>>> a20db82979ee095e309127bc1af38bf69ad63ea0
+
 
 
 
 export default function App() {
   return (
-<<<<<<< HEAD
-=======
+
     <div classname="max-w-screen">
->>>>>>> a20db82979ee095e309127bc1af38bf69ad63ea0
+
     <Routes>
       {/* 🌍 Main Page */}
       <Route
@@ -47,17 +44,17 @@ export default function App() {
             </section>
 
 
-<<<<<<< HEAD
+
             <section id="case studies">
               <SelectedProjects />
             </section>
 
             <section id="projects">
               <Projects/>
-=======
+
             <section id="projects">
               <SelectedProjects />
->>>>>>> a20db82979ee095e309127bc1af38bf69ad63ea0
+
             </section>
 
 
@@ -92,7 +89,7 @@ export default function App() {
       <Route path="/DoraDetail" element={<DoraDetail />} />
 
 
-<<<<<<< HEAD
+
       <Route path="/CloudDataBase" element={<CloudDataBase />} />
       <Route path="/Dorna" element={<Dorna />} />
       <Route path="/KheradKhan" element={<KheradKhan />} />
@@ -100,10 +97,10 @@ export default function App() {
 
 
     </Routes>
-=======
+
 
     </Routes>
       </div>
->>>>>>> a20db82979ee095e309127bc1af38bf69ad63ea0
+
   );
 }
