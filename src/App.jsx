@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 import RitmoDetail from "./pages/RitmoDetail";
 import Projects from "./components/Projects";
 import CloudDataBase from "./pages/CloudDataBase";
-import KheradKhan from "./pages/kheradkhan";
+import KheradKhan from "./pages/KheradKhan";
 import Dorna from "./pages/Dorna";
 
 
