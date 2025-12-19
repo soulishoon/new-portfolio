@@ -8,10 +8,10 @@ import {
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 
-import mockupdora1 from "../assets/mockups/mockupdora1.png";
-import mockupdora2 from "../assets/mockups/mockupdora2.png";
-import mockupdora3 from "../assets/mockups/mockupdora3.png";
-import mockupdora4 from "../assets/mockups/mockupdora4.png";
+import mockupdora1 from "../../public/assets/mockups/mockupdora1.png";
+import mockupdora2 from "../../public/assets/mockups/mockupdora2.png";
+import mockupdora3 from "../../public/assets/mockups/mockupdora3.png";
+import mockupdora4 from "../../public/assets/mockups/mockupdora4.png";
 
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";

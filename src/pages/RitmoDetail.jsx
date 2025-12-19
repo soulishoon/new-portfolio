@@ -5,8 +5,8 @@ import { ArrowLeft } from "lucide-react";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 
-import mockupretro1 from "../assets/mockups/mockupretro1.png";
-import mockupretro2 from "../assets/mockups/mockupretro2.png";
+import mockupretro1 from "../../public/assets/mockups/mockupretro1.png";
+import mockupretro2 from "../../public/assets/mockups/mockupretro2.png";
 
 export default function RitmoDetail() {
   const x = useMotionValue(0);

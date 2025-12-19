@@ -7,11 +7,11 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import mockup1 from "../assets/mockups/mockup1.png";
-import mockup2 from "../assets/mockups/mockup2.png";
+import mockup1 from "../../public/assets/mockups/mockup1.png";
+import mockup2 from "../../public/assets/mockups/mockup2.png";
 
-import mockup3 from "../assets/mockups/mockup3.png";
-import mockup4 from "../assets/mockups/mockup4.png";
+import mockup3 from "../../public/assets/mockups/mockup3.png";
+import mockup4 from "../../public/assets/mockups/mockup4.png";
 
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";

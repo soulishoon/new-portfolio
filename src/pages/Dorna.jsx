@@ -7,10 +7,10 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import dorna1 from "../assets/project image/dornatour1.png";
-import dorna2 from "../assets/project image/dornatour2.png";
-import dorna3 from "../assets/project image/dornatour3.png";
-import dorna4 from "../assets/project image/dornatour4.png";
+import dorna1 from "../../public/assets/project image/dornatour1.png";
+import dorna2 from "../../public/assets/project image/dornatour2.png";
+import dorna3 from "../../public/assets/project image/dornatour3.png";
+import dorna4 from "../../public/assets/project image/dornatour4.png";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 
