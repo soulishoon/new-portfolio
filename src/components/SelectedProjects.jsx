@@ -42,7 +42,7 @@ export default function SelectedProjects() {
       >
 
         <h2 className="text-3xl sm:text-4xl font-bold bg-linear-to-r from-[#60a5fa] to-[#e36414] bg-clip-text text-transparent  mb-3">
-          CASE STUDIES
+          CASESTUDIES
         </h2>
         <p className="text-gray-400 mb-12 max-w-2xl mx-auto text-sm sm:text-base">
 
