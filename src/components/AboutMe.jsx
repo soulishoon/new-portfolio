@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Donya from "../../public/assets/Hero.png";
+// import Donya from "../../public/assets/Hero.png";
 
 
 export default function AboutMe() {
@@ -16,7 +16,7 @@ export default function AboutMe() {
           className="flex justify-center md:justify-start"
         >
           <img
-            src={Donya}
+            src={"/assets/Hero.png"}
             alt="Profile"
             className="w-64 h-64 object-cover rounded-full shadow-lg border border-gray-200 hover:scale-105 transition-transform duration-500"
           />
