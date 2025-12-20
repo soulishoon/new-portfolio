@@ -17,8 +17,8 @@ import "@fontsource/poppins/600.css";
 const conceptImages = [
   { id: 1, src: databse1, title: "Fluid Navigation" },
   { id: 2, src: databse2, title: "Modern UI System" },
-  { id: 3, src: databse3, title: "Futuristic Dashboard" },
-  { id: 4, src: databse4, title: "AI Workflow Assistant" },
+  { id: 3, src: databse4, title: "Futuristic Dashboard" },
+  { id: 4, src: databse3, title: "AI Workflow Assistant" },
 ];
 
 export default function CloudDataBase() {
