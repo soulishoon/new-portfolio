@@ -14,12 +14,6 @@ import "swiper/css/pagination";
 
 const concepts = [
     {
-        title: "Kherad Khan",
-        description: "Designed a visually immersive website for cake recipes, combining delightful UI elements with",
-        image: book1,
-        urllink: "/KheradKhan",
-    },
-    {
         title: "Dorna",
         description: "Developed a cinematic movie platform with intuitive navigation",
         image: dorna1,
@@ -30,6 +24,12 @@ const concepts = [
         description: "A vibrant music streaming app with personalized playlists and fluid navigation",
         image: database1,
         urllink: "/CloudDataBase",
+    },
+    {
+        title: "Kherad Khan",
+        description: "Designed a visually immersive website for cake recipes, combining delightful UI elements with",
+        image: book1,
+        urllink: "/KheradKhan",
     },
 
 ];
