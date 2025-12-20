@@ -8,10 +8,10 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import mockupdesktop1 from "../../public/assets/mockups/mockupdesktop1.png";
-import mockupdesktop2 from "../../public/assets/mockups/mockupdesktop2.png";
-import mockupdesktop3 from "../../public/assets/mockups/mockupdesktop3.png";
-import mockupdesktop4 from "../../public/assets/mockups/mockupdesktop4.png";
+import mockupdesktop1 from "../assets/mockups/mockupdesktop1.png";
+import mockupdesktop2 from "../assets/mockups/mockupdesktop2.png";
+import mockupdesktop3 from "../assets/mockups/mockupdesktop3.png";
+import mockupdesktop4 from "../assets/mockups/mockupdesktop4.png";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 

@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import Dide from "../../public/assets/concept images/Dide.png";
-import Dora from "../../public/assets/concept images/Dora.png";
-import Driveo from "../../public/assets/concept images/Driveo.png";
-import Ritmo from "../../public/assets/concept images/Ritmo.png";
-import SweetCraft from "../../public/assets/mockups/mockup1.png";
+import Dide from "../assets/concept-images/Dide.png";
+import Dora from "../assets/concept-images/Dora.png";
+import Driveo from "../assets/concept-images/Driveo.png";
+import Ritmo from "../assets/concept-images/Ritmo.png";
+import SweetCraft from "../assets/mockups/mockup1.png";
 
 import "swiper/css";
 import "swiper/css/navigation";

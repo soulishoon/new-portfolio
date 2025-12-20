@@ -7,10 +7,10 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import databse1 from "../../public/assets/project image/database1.png";
-import databse2 from "../../public/assets/project image/database2.png";
-import databse3 from "../../public/assets/project image/database3.png";
-import databse4 from "../../public/assets/project image/database4.png";
+import databse1 from "../assets/project-image/database1.png";
+import databse2 from "../assets/project-image/database2.png";
+import databse3 from "../assets/project-image/database3.png";
+import databse4 from "../assets/project-image/database4.png";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 

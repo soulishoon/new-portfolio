@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
-import dornacasestudy from "../../public/assets/DornaCaseStudy.png";
-import kheradkhancasestudy from "../../public/assets/KheradKhanCaseStudy.png";
-import dorna from "../../public/assets/Dorna.png";
-import kherad from "../../public/assets/KheradKhan.png";
+import dornacasestudy from "../assets/DornaCaseStudy.png";
+import kheradkhancasestudy from "../assets/KheradKhanCaseStudy.png";
+import dorna from "../assets/Dorna.png";
+import kherad from "../assets/KheradKhan.png";
 
 export default function SelectedProjects() {
   const [selectedProject, setSelectedProject] = useState(null);

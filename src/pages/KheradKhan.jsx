@@ -7,10 +7,10 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import book1 from "../../public/assets/project image/ketab1.png";
-import book2 from "../../public/assets/project image/ketab2.png";
-import book3 from "../../public/assets/project image/ketab3.png";
-import book4 from "../../public/assets/project image/ketab4.png";
+import book1 from "../assets/project-image/ketab1.png";
+import book2 from "../assets/project-image/ketab2.png";
+import book3 from "../assets/project-image/ketab3.png";
+import book4 from "../assets/project-image/ketab4.png";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 

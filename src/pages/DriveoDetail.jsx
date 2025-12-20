@@ -5,9 +5,9 @@ import { ArrowLeft } from "lucide-react";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 
-import mockupmobile1 from "../../public/assets/mockups/mockupmobile1.png";
-import mockupmobile2 from "../../public/assets/mockups/mockupmobile2.png";
-import mockupmobile3 from "../../public/assets/mockups/mockupmobile3.png";
+import mockupmobile1 from "../assets/mockups/mockupmobile1.png";
+import mockupmobile2 from "../assets/mockups/mockupmobile2.png";
+import mockupmobile3 from "../assets/mockups/mockupmobile3.png";
 
 export default function DriveoDetail() {
   const x = useMotionValue(0);

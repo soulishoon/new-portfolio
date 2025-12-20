@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Donya from "../../public/assets/Hero.png";
-import OrangeShape from "../../public/assets/orange-shape.svg";
+import Donya from "../assets/Hero.png";
+import OrangeShape from "../assets/orange-shape.svg";
 
 export default function Hero() {
   return (
