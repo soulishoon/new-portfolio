@@ -15,10 +15,10 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/600.css";
 
 const conceptImages = [
-  { id: 1, src: dorna1, },
-  { id: 2, src: dorna2,  },
+  { id: 1, src: dorna2, },
+  { id: 2, src: dorna4,  },
   { id: 3, src: dorna3,  },
-  { id: 4, src: dorna4,  },
+  { id: 4, src: dorna1,  },
 ];
 
 export default function Dorna() {
