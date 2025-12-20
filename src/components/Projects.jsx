@@ -45,7 +45,8 @@ export default function Projects() {
         >
             <div className="max-w-6xl mx-auto text-center relative">
                 {/* Header */}
-                <h2 className="text-3xl sm:text-4xl  mb-3 sm:mb-4 text-black font-bold">
+                <h2 className="text-3xl sm:text-4xl  mb-3 sm:mb-4  font-bold
+                    bg-linear-to-r from-[#60a5fa] to-[#e36414] bg-clip-text text-transparent">
                     PROJECTS
                 </h2>
                 <p className="text-gray-700 mb-10 sm:mb-12 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
