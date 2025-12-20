@@ -5,7 +5,8 @@ export default function ExperienceSection() {
   return (
 
     <section className="bg-white  text-[#0b1221] py-20 px-6 sm:px-10 md:px-16 lg:px-24">
-      <div className="max-w-6xl ml-48 mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 px-2 sm:px-4 lg:relative lg:left-[7%]">
+
 
 
         

@@ -30,7 +30,8 @@ export default function SelectedProjects() {
 
   return (
 
-    <section className="bg-[#0A1433] bg mx-auto py-20 px-5 sm:px-8 md:px-12 text-center">
+    <section className="bg-[#0A1433] py-20 px-5 sm:px-8 md:px-12 text-center">
+
 
       {/* Header */}
       <motion.div
@@ -51,7 +52,8 @@ export default function SelectedProjects() {
 
       {/* Projects Grid */}
 
-      <div className="grid grid-cols-1  sm:grid-cols-2 gap-8 sm:gap-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
+
 
         {projects.map((project, index) => (
           <motion.div
@@ -59,9 +61,10 @@ export default function SelectedProjects() {
             onClick={() => setSelectedProject(project)}
 
             className="group relative bg-gray-50 rounded-2xl
-             overflow-hidden shadow-sm hover:shadow-xl 
-             hover:-translate-y-1 hover:scale-[1.02] transition-all 
-              duration-500 cursor-pointer max-w-[600px] left-[7%]  "
+ overflow-hidden shadow-sm hover:shadow-xl 
+ hover:-translate-y-1 hover:scale-[1.02] transition-all 
+ duration-500 cursor-pointer max-w-[600px] mx-auto"
+
 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -102,72 +105,72 @@ export default function SelectedProjects() {
 
       {/* Bottom Drawer */}
       <Dialog.Root
-  open={!!selectedProject}
-  onOpenChange={() => setSelectedProject(null)}
->
-  <Dialog.Portal>
-    {/* Overlay */}
-    <Dialog.Overlay className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-700 z-40" />
+        open={!!selectedProject}
+        onOpenChange={() => setSelectedProject(null)}
+      >
+        <Dialog.Portal>
+          {/* Overlay */}
+          <Dialog.Overlay className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-700 z-40" />
 
-    {/* Drawer Content */}
-    <Dialog.Content asChild>
-      <motion.div
-        initial={{ y: "100%" }}
-        animate={{ y: 0 }}
-        exit={{ y: "100%" }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        drag="y"
-        dragConstraints={{ top: 0, bottom: 0 }}
-        onDragEnd={(_, info) => {
-          if (info.offset.y > 120) setSelectedProject(null);
-        }}
-        className="fixed z-50 bottom-0 left-0 right-0
+          {/* Drawer Content */}
+          <Dialog.Content asChild>
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              drag="y"
+              dragConstraints={{ top: 0, bottom: 0 }}
+              onDragEnd={(_, info) => {
+                if (info.offset.y > 120) setSelectedProject(null);
+              }}
+              className="fixed z-50 bottom-0 left-0 right-0
                    bg-white text-gray-900 rounded-t-3xl shadow-2xl
                    flex flex-col max-h-[95vh] overflow-hidden
                    md:max-h-[89vh]"
-      >
-        {/* Drag Handle */}
-        <div className="w-14 h-1.5 bg-gray-300 rounded-full mx-auto my-4" />
+            >
+              {/* Drag Handle */}
+              <div className="w-14 h-1.5 bg-gray-300 rounded-full mx-auto my-4" />
 
-        {/* Fixed Header */}
-        <div className="shrink-0 sticky top-0 w-full bg-white z-10 border-b border-gray-200">
+              {/* Fixed Header */}
+              <div className="shrink-0 sticky top-0 w-full bg-white z-10 border-b border-gray-200">
 
-          <div className="flex justify-between items-center py-4 px-5 sm:px-8">
-            <div>
-              <Dialog.Title className="text-lg sm:text-xl font-semibold">
-                {selectedProject?.title}
-              </Dialog.Title>
-              <Dialog.Description className="text-gray-500 text-sm">
-                {selectedProject?.tag}
-              </Dialog.Description>
-            </div>
+                <div className="flex justify-between items-center py-4 px-5 sm:px-8">
+                  <div>
+                    <Dialog.Title className="text-lg sm:text-xl font-semibold">
+                      {selectedProject?.title}
+                    </Dialog.Title>
+                    <Dialog.Description className="text-gray-500 text-sm">
+                      {selectedProject?.tag}
+                    </Dialog.Description>
+                  </div>
 
-            <Dialog.Close asChild>
-              <button className="text-gray-500 hover:text-gray-800 transition text-xl">
-                ✕
-              </button>
-            </Dialog.Close>
-          </div>
-        </div>
+                  <Dialog.Close asChild>
+                    <button className="text-gray-500 hover:text-gray-800 transition text-xl">
+                      ✕
+                    </button>
+                  </Dialog.Close>
+                </div>
+              </div>
 
-        {/* Scrollable Content */}
-        <div className="flex-1 overflow-y-auto scroll-smooth px-5 sm:px-8 pb-24">
-          <img
-            src={selectedProject?.casestudy}
-            alt={selectedProject?.title}
-            className="rounded-lg w-full h-auto mb-6 shadow-md object-contain"
-          />
+              {/* Scrollable Content */}
+              <div className="flex-1 overflow-y-auto scroll-smooth px-5 sm:px-8 pb-24">
+                <img
+                  src={selectedProject?.casestudy}
+                  alt={selectedProject?.title}
+                  className="rounded-lg w-full h-auto mb-6 shadow-md object-contain"
+                />
 
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
-            {selectedProject?.description}
-          </p>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                  {selectedProject?.description}
+                </p>
 
-          <div className="h-24" />
-        </div>
-      </motion.div>
-    </Dialog.Content>
-  </Dialog.Portal>
-</Dialog.Root>
+                <div className="h-24" />
+              </div>
+            </motion.div>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
 
     </section>
   );
