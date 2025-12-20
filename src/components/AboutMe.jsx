@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
+
 import Donya from "../assets/Hero.png";
+
+
 
 
 export default function AboutMe() {
