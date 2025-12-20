@@ -65,6 +65,18 @@ export default function ExperienceSection() {
           </div>
 
           <div className="flex flex-col gap-8 border-l border-gray-300 pl-6">
+            {/* Education 3 */}
+            <div>
+              <h3 className="font-semibold text-lg sm:text-xl">Mohaymen Boot Camp</h3>
+
+              <p className="text-gray-600 text-sm mb-2">Product Management</p>
+            </div>
+          </div>
+            {/* Education 2 */}
+            <div>
+              <h3 className="font-semibold text-lg sm:text-xl">Makeen Academy</h3>
+              <p className="text-gray-600 text-sm mb-2">UX/UI Design</p>
+            </div>
             {/* Education 1 */}
             <div>
               <h3 className="font-semibold text-lg sm:text-xl">Bachelor of Industrial Design</h3>
@@ -75,19 +87,7 @@ export default function ExperienceSection() {
             </div>
 
 
-            {/* Education 2 */}
-            <div>
-              <h3 className="font-semibold text-lg sm:text-xl">MAKEEN ACADEMY</h3>
-              <p className="text-gray-600 text-sm mb-2">UX/UI Design</p>
-            </div>
 
-            {/* Education 3 */}
-            <div>
-              <h3 className="font-semibold text-lg sm:text-xl">Mohaymen Boot Camp</h3>
-
-              <p className="text-gray-600 text-sm mb-2">Product Management</p>
-            </div>
-          </div>
         </motion.div>
 
       </div>
