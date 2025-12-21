@@ -60,6 +60,11 @@ export default function Projects() {
                         onBeforeInit={(swiper) => (swiperRef.current = swiper)}
                         spaceBetween={24}
                         centeredSlides={false}
+                          autoplay={{
+          delay: 3200,
+          disableOnInteraction: false,
+        }}
+        loop={true}
                         pagination={{
                             el: ".custom-pagination",
                             clickable: true,
