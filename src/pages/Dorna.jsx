@@ -33,7 +33,7 @@ export default function Dorna() {
   }, []);
 
   const details = [
-    "A user-centric travel platform that simplifies the process of discovering, comparing, and booking tours.",
+    "A travel platform that simplifies the process of discovering, comparing, and booking tours.",
     " Through well-structured content and an intuitive information hierarchy, Dorna enhances user confidence and facilitates informed travel decisions."
   ];
 
