@@ -31,9 +31,9 @@ export default function DriveoDetail() {
   };
 
   const details = [
-    "A modern car rental app with real-time availability and a fast booking process.",
+    "A modern car rental app with real time availability and a fast booking process.",
 
-     "Designed for ease of use, it offers a simple, efficient, and stress-free rental experience across all devices."
+     "Designed for ease of use, it offers a simple, efficient, and stress free rental experience across all devices."
 
   ];
 
