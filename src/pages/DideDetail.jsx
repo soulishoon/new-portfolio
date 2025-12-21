@@ -28,7 +28,7 @@ export default function DideDetail() {
   const details = [
     "Designed a cinematic movie platform with intuitive navigation, detailed movie pages, and personalized watchlists.",
 
-     "Emphasized visual storytelling and a user-centric experience for film discovery and engagement."
+     "Emphasized visual storytelling and a user centric experience for film discovery and engagement."
   ];
 
   
