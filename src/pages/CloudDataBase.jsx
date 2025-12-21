@@ -33,9 +33,9 @@ export default function CloudDataBase() {
   }, []);
 
   const details = [
-"Designed a complex database creation flow to make it clear and usable for non-technical users.",
+"Designed a complex database creation flow to make it clear and usable for non technical users.",
 "Simplified database selection by adding short descriptions, version selection, and visual resource tiers (Gold / Silver / Bronze).",
-"Replaced text heavy and fragmented layouts with card-based resource selection for better comparison and faster decisions."
+"Replaced text heavy and fragmented layouts with card based resource selection for better comparison and faster decisions."
   ];
 
   // 🎯 Parallax setup (disabled for mobile)
