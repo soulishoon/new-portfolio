@@ -15,19 +15,19 @@ import "swiper/css/pagination";
 const concepts = [
     {
         title: "Dorna",
-        description: "Redesigning a modern travel booking experience focused on simplicity, accessibility, and visual harmony.",
+        description: "A travel platform that simplifies the process of discovering, comparing, and booking tours.",
         image: dorna1,
         urllink: "/Dorna",
     },
     {
         title: "CloudBase Database",
-        description: "Designing a cloud database platform that enables efficient data storage, management, and retrieval, emphasizing scalability.",
+        description: "Designing a cloud database platform that enables efficient data storage, management.",
         image: database1,
         urllink: "/CloudDataBase",
     },
     {
         title: "Kherad Khan",
-        description: "Designing an intuitive platform for discovering, managing, and reading books with a focus on accessibility and minimal aesthetics.",
+        description: "A digital reading platform where users can save, organize.",
         image: book1,
         urllink: "/KheradKhan",
     },
