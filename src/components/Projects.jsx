@@ -27,7 +27,7 @@ const concepts = [
     },
     {
         title: "Kherad Khan",
-        description: "A digital reading platform where users can save, organize.",
+        description: "A digital reading platform where users can save, organize the notes.",
         image: book1,
         urllink: "/KheradKhan",
     },
