@@ -35,7 +35,7 @@ export default function SweetcraftDetail() {
   }, []);
 
   const details = [
-    "Designed an intuitive baking platform that delivers high-quality recipe videos and step-by-step instructions.",
+    "Designed an intuitive baking platform that delivers high quality recipe videos and step by step instructions.",
     "Empowered users to personalize their learning journey by saving, organizing, and sharing recipes.",
     "Prioritized simplicity and accessibility to ensure an inclusive, engaging experience for users of all skill levels.",
   ];
