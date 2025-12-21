@@ -21,7 +21,7 @@ const concepts = [
     },
     {
         title: "CloudBase Database",
-        description: "Designing a cloud database platform that enables efficient data storage, management, and retrieval, emphasizing scalability, reliability, and secure access.",
+        description: "Designing a cloud database platform that enables efficient data storage, management, and retrieval, emphasizing scalability.",
         image: database1,
         urllink: "/CloudDataBase",
     },
