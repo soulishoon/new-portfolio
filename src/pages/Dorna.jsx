@@ -34,7 +34,7 @@ export default function Dorna() {
 
   const details = [
     "A travel platform that simplifies the process of discovering, comparing, and booking tours.",
-    " Through well-structured content and an intuitive information hierarchy, Dorna enhances user confidence and facilitates informed travel decisions."
+    " Through wellstructured content and an intuitive information hierarchy, Dorna enhances user confidence and facilitates informed travel decisions."
   ];
 
   // 🎯 Parallax setup (disabled for mobile)
