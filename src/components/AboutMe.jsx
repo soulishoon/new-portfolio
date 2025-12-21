@@ -36,7 +36,7 @@ export default function AboutMe() {
             About Me
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-          As a UX/UI Designer with a background in Industrial Design, I combine creativity and problem-solving to craft human-centered digital experiences. 
+          As a Product Designer with a background in Industrial Design, I combine creativity and problem-solving to craft human-centered digital experiences. 
           </p>
           <p className="text-gray-600 leading-relaxed mb-10">
           I’m passionate about accessible, seamless design and thrive in collaborative environments that collaborative environments that foster innovation.
