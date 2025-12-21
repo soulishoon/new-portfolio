@@ -34,7 +34,7 @@ export default function KheradKhan() {
 
   const details = [
     "A digital reading platform where users can save, organize, and revisit key takeaways from books and articles.",
-    " Designed for simplicity and efficiency, it supports deep learning and long-term knowledge retention."
+    " Designed for simplicity and efficiency, it supports deep learning and long term knowledge retention."
   ];
 
   // 🎯 Parallax setup (disabled for mobile)
