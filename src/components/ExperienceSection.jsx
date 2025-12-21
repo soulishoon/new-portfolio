@@ -27,22 +27,22 @@ export default function ExperienceSection() {
           </div>
 
           <div className="flex flex-col gap-8 border-l border-gray-300 pl-6">
+            {/* Job 1 */}
+            <div>
+              <h3 className="font-semibold text-lg sm:text-xl">Mohaymen</h3>
+              <p className="text-gray-600 text-sm mb-2">
+                Product Designer <span className="text-gray-400">•</span> June 2025 - Present
+              </p>
+              <p className="text-gray-500 text-sm leading-relaxed"></p>
+            </div>
             {/* Job 2 */}
             <div>
-              <h3 className="font-semibold text-lg sm:text-xl">UI & UX Designer</h3>
+              <h3 className="font-semibold text-lg sm:text-xl">Makeen Ideal Media</h3>
               <p className="text-gray-600 text-sm mb-2">
-                Makeen Ideal Media <span className="text-gray-400">•</span> Feb 2024 - June 2025
+                UI & UX Designer <span className="text-gray-400">•</span> Feb 2024 - June 2025
               </p>
               <p className="text-gray-500 text-sm leading-relaxed"></p>
 
-            </div>
-            {/* Job 1 */}
-            <div>
-              <h3 className="font-semibold text-lg sm:text-xl">Product Designer</h3>
-              <p className="text-gray-600 text-sm mb-2">
-                Mohaymen <span className="text-gray-400">•</span> June 2025 - Present
-              </p>
-              <p className="text-gray-500 text-sm leading-relaxed"></p>
             </div>
 
           </div>
@@ -67,14 +67,14 @@ export default function ExperienceSection() {
           <div className="flex flex-col gap-8 border-l border-gray-300 pl-6">
   {/* Education 3 */}
   <div>
-    <h3 className="font-semibold text-lg sm:text-xl">Mohaymen Boot Camp</h3>
-    <p className="text-gray-600 text-sm mb-2">Product Management</p>
+    <h3 className="font-semibold text-lg sm:text-xl">Product Management</h3>
+    <p className="text-gray-600 text-sm mb-2">Mohaymen Boot Camp</p>
   </div>
 
   {/* Education 2 */}
   <div>
-    <h3 className="font-semibold text-lg sm:text-xl">Makeen Academy</h3>
-    <p className="text-gray-600 text-sm mb-2">UX/UI Design</p>
+    <h3 className="font-semibold text-lg sm:text-xl">UX/UI Design</h3>
+    <p className="text-gray-600 text-sm mb-2">Makeen Academy</p>
   </div>
 
   {/* Education 1 */}
